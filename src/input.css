@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'inter', sans-serif;
+    background: #F5F7FA;
+}
+
+
+.hs:hover {
+    box-shadow: 0 1px 8px 0 rgb(81, 165, 151);
+}
+
+.nav-fixed { 
+    @apply fixed bg-navWhite dark:bg-navDark backdrop-blur-lg;
+    z-index: 9999;
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.toTop-fixed {
+    @apply fixed;
+    z-index: 999;
+}
+
+.active > span:nth-child(1) {
+    @apply rotate-45 ;
+}
+
+.active > span:nth-child(2) {
+    @apply scale-0;
+}
+.active > span:nth-child(3) {
+   @apply -rotate-45 ;
+}
+
+
+.inp:focus ~ .lab,
+.inp:valid ~ .lab {
+    top: -25px;
+    color: #51b1a6;
+    background: linear-gradient( #F5F7FA, #ffff 90%);
+    letter-spacing: normal;
+}
+
+.project1:hover ~ .tailwind {
+    color: #38bdf8;
+    text-shadow: 0px 0px 3px #7dd3fc;
+    transition: all 400ms ease-in-out;
+}
+.project2:hover ~ .react {
+    color: #0891b2;
+    text-shadow: 1px 1px 2px #06b6d4;
+    transition: all 400ms ease-in-out;
+}
+.project3:hover ~ .next {
+    color: #e2e8f0;
+    text-shadow: 1px 1px 2px #f1f5f9;
+    transition: all 400ms ease-in-out;
+}
+.project4:hover ~ .laravel {
+    color: #ef4444;
+    text-shadow: 1px 1px 2px #f87171;
+    transition: all 400ms ease-in-out;
+}
