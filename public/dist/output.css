@@ -650,16 +650,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.my-9 {
-  margin-top: 2.25rem;
-  margin-bottom: 2.25rem;
-}
-
 .my-7 {
   margin-top: 1.75rem;
   margin-bottom: 1.75rem;
@@ -950,12 +940,6 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-slate-800 {
-  --tw-gradient-from: #1e293b var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(30 41 59 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .from-20\% {
   --tw-gradient-from-position: 20%;
 }
@@ -967,10 +951,6 @@ video {
 
 .via-40\% {
   --tw-gradient-via-position: 40%;
-}
-
-.to-slate-900 {
-  --tw-gradient-to: #0f172a var(--tw-gradient-to-position);
 }
 
 .to-transparent {
@@ -1297,15 +1277,6 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-/* .inp:focus ~ .lab,
-.inp:valid ~ .lab {
-    top: -25px;
-    color: #51b1a6;
-    background: linear-gradient( #F5F7FA, #ffff 90%);
-    letter-spacing: normal;
-    transition: all 400ms ease-in-out;
-} */
-
 .project1:hover ~ .tailwind {
   color: #38bdf8;
   text-shadow: 0px 0px 3px #7dd3fc;
@@ -1446,11 +1417,6 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.peer:valid ~ .peer-valid\:text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .peer:valid ~ .peer-valid\:text-dark {
   --tw-text-opacity: 1;
   color: rgb(36 36 63 / var(--tw-text-opacity));
@@ -1469,15 +1435,6 @@ body {
 .peer:focus ~ .peer-focus\:-translate-y-9 {
   --tw-translate-y: -2.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.peer:focus ~ .peer-focus\:bg-transparent {
-  background-color: transparent;
-}
-
-.peer:focus ~ .peer-focus\:text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .peer:focus ~ .peer-focus\:text-dark {
@@ -1514,6 +1471,11 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+:is(.dark .dark\:text-slate-100) {
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
+}
+
 :is(.dark .dark\:text-slate-300) {
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity));
@@ -1522,11 +1484,6 @@ body {
 :is(.dark .dark\:text-white) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-:is(.dark .dark\:text-slate-100) {
-  --tw-text-opacity: 1;
-  color: rgb(241 245 249 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:hover\:bg-primary:hover) {
@@ -1549,33 +1506,14 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.peer:focus ~ :is(.dark .peer-focus\:dark\:-translate-y-6) {
-  --tw-translate-y: -1.5rem;
+.peer:focus ~ :is(.dark .peer-focus\:dark\:-translate-x-2) {
+  --tw-translate-x: -0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .peer:focus ~ :is(.dark .peer-focus\:dark\:-translate-y-9) {
   --tw-translate-y: -2.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.peer:focus ~ :is(.dark .peer-focus\:dark\:-translate-x-9) {
-  --tw-translate-x: -2.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.peer:focus ~ :is(.dark .peer-focus\:dark\:-translate-x-3) {
-  --tw-translate-x: -0.75rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.peer:focus ~ :is(.dark .peer-focus\:dark\:-translate-x-2) {
-  --tw-translate-x: -0.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.peer:focus ~ :is(.dark .peer-focus\:dark\:bg-gradient-to-t) {
-  background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
 .peer:focus ~ :is(.dark .peer-focus\:dark\:text-white) {
