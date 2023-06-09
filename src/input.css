@@ -35,13 +35,14 @@ body {
 }
 
 
-.inp:focus ~ .lab,
+/* .inp:focus ~ .lab,
 .inp:valid ~ .lab {
     top: -25px;
     color: #51b1a6;
     background: linear-gradient( #F5F7FA, #ffff 90%);
     letter-spacing: normal;
-}
+    transition: all 400ms ease-in-out;
+} */
 
 .project1:hover ~ .tailwind {
     color: #38bdf8;
