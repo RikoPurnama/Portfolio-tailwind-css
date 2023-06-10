@@ -73,13 +73,12 @@ darkToggle.addEventListener("click", () => {
  });
 
 // Typeit 
-
-new TypeIt("#type", {
-  speed : 70,
-
-  
+document.addEventListener("DOMContentLoaded", function () {
+    new TypeIt("#type", {
+  speed : 70
 })
 .delete(19)
 .type('<span class="text-dark dark:text-slate-300 font-semibold opacity-80">FullStack </span>')
 .type('<span class="text-dark dark:text-slate-300 font-semibold opacity-80">Developer </span>')
 .go();
+  });

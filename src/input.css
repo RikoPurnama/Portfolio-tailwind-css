@@ -13,6 +13,10 @@ body {
     box-shadow: 0 1px 8px 0 rgb(81, 165, 151);
 }
 
+nav {
+    z-index: 99999;
+}
+
 .nav-fixed { 
     @apply fixed bg-navWhite dark:bg-navDark backdrop-blur-lg;
     z-index: 9999;
