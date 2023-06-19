@@ -857,10 +857,6 @@ video {
   overflow: hidden;
 }
 
-.overflow-scroll {
-  overflow: scroll;
-}
-
 .scroll-smooth {
   scroll-behavior: smooth;
 }
@@ -1099,6 +1095,16 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -1550,7 +1556,19 @@ nav {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 420px) {
+  .min-\[420px\]\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
 @media (min-width: 640px) {
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .peer:hover ~ .sm\:peer-hover\:-translate-y-64 {
     --tw-translate-y: -16rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1580,6 +1598,11 @@ nav {
 
   .md\:pt-60 {
     padding-top: 15rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
